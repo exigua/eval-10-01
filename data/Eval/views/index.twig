@@ -1,0 +1,52 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+
+  <h1>{{title}}</h1>
+<form id="form-user" method='POST'>
+  <div class="form-group">
+    <label for="inputSurname">Nom</label>
+    <input type="text" class="form-control" id="inputSurname">
+  </div>
+  <div class="form-group">
+    <label for="inputName">Prénom</label>
+    <input type="text" class="form-control" id="inputName">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail5">Email 2 (opt.)</label>
+      <input type="email" class="form-control" id="inputEmail5" placeholder="Email">
+    </div>
+    </div>
+  <div class="form-group">
+    <label for="inputMobil">Numéro de Téléphone Mobile</label>
+    <input type="text" class="form-control" id="inputMobil">
+  </div>
+  <div class="form-group">
+    <label for="inputFix">Numéro de Téléphone Fixe</label>
+    <input type="text" class="form-control" id="inputFix">
+  </div>
+
+  </div>
+  
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01"
+      aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01"></label>
+  </div>
+</div>
+  <button type="submit" class="btn btn-primary">Log In</button>
+  </div>
+</form> 
+{% endblock %}
